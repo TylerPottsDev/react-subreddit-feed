@@ -1,13 +1,63 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: montserrat, sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+header {
+  background-color: #FFCE00;
+  background-image: linear-gradient(to right, #FE4880, #FFCE00);
+  box-shadow: 0px 3px 6px rgba(0,0,0,0.2);
+  padding: 15px;
+}
+
+header .subreddit_input {
+  display: inline-block;
+  color: #F3F3F3;
+  font-size: 32px;
+  font-weight: 600;
+  font-style: italic;
+  text-transform: uppercase;
+  background: none;
+  border: none;
+  outline: none;
+  appearance: none;
+}
+
+header:before {
+  content: "/r/";
+  display: inline-block;
+  color: #F3F3F3;
+  font-size: 32px;
+  font-weight: 600;
+  font-style: italic;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.articles article {
+  padding: 30px 15px;
+  background-color: #FFF;
+  color: #212121;
+}
+
+.articles article a {
+  text-decoration: none;
+}
+
+.articles article h3 {
+  color: #212121;
+}
+
+.articles article:nth-child(2n) {
+  background-color: #F3F3F3;
+}
+
+.articles article:hover {
+  background-image: linear-gradient(to left, #FE4880, #FFCE00);
+}
+
+.articles article:hover h3 {
+  color: #FFF;
 }
